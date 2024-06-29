@@ -11,7 +11,7 @@ const userSchema = new mongoose.Schema({
     last_name:{
         type:String,
         trim:true,
-        required:true
+        default:''
     },
     email:{
         type:String,
@@ -45,10 +45,6 @@ const userSchema = new mongoose.Schema({
     byear:{
         type:Number,
         required:true
-    },
-    verified:{
-        type:Boolean,
-        default:false
     },
     friends:{
         type:[
